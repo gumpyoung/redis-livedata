@@ -23,6 +23,11 @@ RedisClient = function (url, options) {
   }
 
   self._connection = RedisNpm.createClient(port, host, options);
+
+  self._connection.on("error", function (err) {
+    console.log(' RedisClient error:',err.message )
+  });
+
 };
 
 RedisClient.prototype.subscribeKeyspaceEvents = function (callback, listener) {

@@ -10,7 +10,7 @@
 Package.describe({
   summary: "Adaptor for using Redis and Miniredis over DDP",
   version: "1.0.2",
-  name: "slava:redis-livedata",
+  name: "gumpyoung:redis-livedata",
   git: "https://github.com/meteor/redis-livedata"
 });
 
